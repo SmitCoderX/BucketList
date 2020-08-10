@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Bucket List</string>
+    <string name="MainText">Hey Its Seems You have not made your bucket list. Click on the + Button to make your List..</string>
+</resources>
