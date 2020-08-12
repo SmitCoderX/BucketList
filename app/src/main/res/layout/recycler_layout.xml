@@ -5,8 +5,8 @@
     android:layout_height="wrap_content"
     android:elevation="8dp"
     android:layout_marginBottom="8dp"
-    app:cardBackgroundColor="@android:color/white"
-    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/cardBackground"
+    app:cardCornerRadius="6dp"
     app:cardElevation="8dp">
 
     <RelativeLayout
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="Line 1"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -30,8 +30,9 @@
             android:layout_below="@id/text1"
             android:layout_marginStart="18dp"
             android:text="Quanity"
-            android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
 
         <ImageView
             android:id="@+id/imageViewDelete"

@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Bucket List</string>
     <string name="MainText">Hey Its Seems You have not made your bucket list. Click on the + Button to make your List..</string>
+
+    <string name="credits"> \u2022 <b>Flaticon</b> for social media icons.
+    </string>
+
+    <string name="libs">\u2022 <b>Splash Screen</b> for showing Splash Screen. I was kinda feeling lazy to make myself.
+        \n\u2022 <b>Circle ImageView</b> for showing my pic xD lol.
+    </string>
+    <string name="version">v1.0</string>
 </resources>

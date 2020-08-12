@@ -32,6 +32,12 @@ public class BucketAdapter extends RecyclerView.Adapter<BucketAdapter.BucketView
         return new BucketViewHolder(view, listener);
     }
 
+    public void clear() {
+        int size = mList.size();
+        mList.clear();
+        this.notifyItemRangeRemoved(0, size);
+    }
+
     @Override
     public void onBindViewHolder(@NonNull BucketViewHolder holder, int position) {
         BucketItems currentItems = mList.get(position);
@@ -53,7 +59,6 @@ public class BucketAdapter extends RecyclerView.Adapter<BucketAdapter.BucketView
 
         private TextView textItem;
         private TextView textQuantity;
-        private ImageView imageDelete;
 
 
         public BucketViewHolder(@NonNull View itemView, final onBinClickListener listener) {
@@ -61,7 +66,7 @@ public class BucketAdapter extends RecyclerView.Adapter<BucketAdapter.BucketView
 
             textItem = itemView.findViewById(R.id.text1);
             textQuantity = itemView.findViewById(R.id.text2);
-            imageDelete = itemView.findViewById(R.id.imageViewDelete);
+            ImageView imageDelete = itemView.findViewById(R.id.imageViewDelete);
             imageDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
